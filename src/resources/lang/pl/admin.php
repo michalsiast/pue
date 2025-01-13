@@ -138,7 +138,7 @@ return [
 
 
     'realization_category.singular' => 'Kategoria realizacji',
-    'realization_category.plural' => 'Kategorie realizacji',
+    'realization_category.plural' => 'Partnerzy',
     'realization_category.title' => 'Tytuł',
     'realization_category.lead' => 'Wprowadzenie',
     'realization_category.text' => 'Tekst',
@@ -155,7 +155,7 @@ return [
     'const_field.company_address' => 'Adres',
     'const_field.company_city' => 'Miasto',
     'const_field.company_country' => 'Państwo',
-    'const_field.company_nip' => 'NIP',
+    'const_field.company_nip' => 'Godziny otwarcia',
     'const_field.company_krs' => 'KRS',
     'const_field.phone' => 'Nr. kontaktowy',
     'const_field.phone2' => 'Nr. kontaktowy 2',

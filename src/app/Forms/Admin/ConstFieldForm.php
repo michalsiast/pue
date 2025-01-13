@@ -29,6 +29,12 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.company_name',
             'rules' => [],
         ],
+        'comapny_description' => [
+            'name' => 'comapny_description',
+            'type' => 'text',
+            'label' => 'Opis',
+            'rules' => [],
+        ],
         'company_address' => [
             'name' => 'company_address',
             'type' => 'text',
@@ -117,6 +123,24 @@ class ConstFieldForm extends Form
             'name' => 'instagram',
             'type' => 'text',
             'label' => 'Instagram',
+            'rules' => [],
+        ],
+        'twitter' => [
+            'name' => 'twitter',
+            'type' => 'text',
+            'label' => 'Twitter',
+            'rules' => [],
+        ],
+        'youtube' => [
+            'name' => 'youtube',
+            'type' => 'text',
+            'label' => 'YouTube',
+            'rules' => [],
+        ],
+        'linkedin' => [
+            'name' => 'linkedin',
+            'type' => 'text',
+            'label' => 'Linkedin',
             'rules' => [],
         ],
 

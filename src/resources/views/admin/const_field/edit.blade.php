@@ -31,6 +31,7 @@
                         </div>
                         <div class="card-body">
                             {!! $form->renderFieldGroup('company_name') !!}
+                            {!! $form->renderFieldGroup('comapny_description') !!}
                             <div class="row">
                                 <div class="col-sm-3">
                                     {!! $form->renderFieldGroup('company_post_code') !!}
@@ -40,11 +41,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     {!! $form->renderFieldGroup('company_city') !!}
-                                </div>
-                                <div class="col-md-6">
-                                    {!! $form->renderFieldGroup('company_country') !!}
                                 </div>
                             </div>
                             {!! $form->renderFieldGroup('company_nip') !!}
@@ -63,7 +61,7 @@
                             {!! $form->renderFieldGroup('email') !!}
 {{--                            {!! $form->renderFieldGroup('email2') !!}--}}
                             {!! $form->renderFieldGroup('contact_form_email') !!}
-{{--                            {!! $form->renderFieldGroup('google_map') !!}--}}
+                            {!! $form->renderFieldGroup('google_map') !!}
                             {!! $form->renderFieldGroup('google_map_iframe') !!}
                         </div>
                     </div>
@@ -79,7 +77,14 @@
                                     {!! $form->renderFieldGroup('facebook') !!}
                                 </div>
                                 <div class="col-lg-6">
-                                    {!! $form->renderFieldGroup('instagram') !!}
+                                    {!! $form->renderFieldGroup('twitter') !!}
+                                </div>
+                            </div><div class="row">
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('youtube') !!}
+                                </div>
+                                <div class="col-lg-6">
+                                    {!! $form->renderFieldGroup('linkedin') !!}
                                 </div>
                             </div>
 

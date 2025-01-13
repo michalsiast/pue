@@ -23,6 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 
 {{--    <link href="{{asset('css/vendors/bootstrap.css')}}" rel="stylesheet">--}}
@@ -718,8 +719,59 @@
 </head>
 
 <body class="home page-template-default page page-id-158 boxed-layout device-l" style="background-color: #F4932A;">
+<div class="parallax-mirror"
+     style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 588px; width: 1200px;">
+    <img class="parallax-slider" src="https://ekokan.com.pl/wp-content/uploads/2021/11/hd-8a.jpg"
+         style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -114px; height: 910px; width: 1429px; max-width: none;">
+</div>
+<div class="parallax-mirror"
+     style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 738px; width: 1200px;">
+    <img class="parallax-slider" src="https://ekokan.com.pl/wp-content/uploads/2021/11/hd-5-1920x1080.jpg"
+         style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -235px; height: 940px; width: 1671px; max-width: none;">
+</div>
+<div id="preloader" style="display: none;"></div>
+<div class=" content-parallax">
+    <header class="scroll-change fixed-top menu-top-logo" data-menu-anima="fade-in" data-menu-height="139"
+            style="height: 139px;">
+        <div class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="navbar navbar-main navbar-middle">
+                <div class="container">
+                    <div class="scroll-hide">
+                        <div class="container">
+                            <a class="navbar-brand center" href="/" style="">
+                                <img class="logo-default"
+                                     src="{{asset('images/logo_ekokan_jpg.jpg')}}"
+                                     alt="" style="">
+                                <img class="logo-retina"
+                                     src="{{asset('images/logo_ekokan_jpg.jpg')}}"
+                                     alt="" style=""></a>
+                        </div>
+                    </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="/" style=""><img class="logo-default"
+                                                                                           src="{{asset('images/logo_ekokan_jpg.jpg')}}" alt=""
+                                                                                           style=""><img class="logo-retina"
+                                                                                                         src="{{asset('images/logo_ekokan_jpg.jpg')}}" alt=""
+                                                                                                         style=""></a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        @include('default.nav_item.main', ['name' => 'main'])
+
+                        <div class="nav navbar-nav navbar-right">
+                            <div class="custom-area"><a href="https://ekokan.com.pl/contacts-two/"
+                                                        class="btn btn-sm hidden-sm">Kontakt</a>
+                                <div class="custom-menu"><span>{{getConstField('company_nip')}}</span><span><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">tel. {{getConstField('phone')}}</a></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 {{--@include('default._helpers.lang_nav')--}}
-@include('default.nav_item.main', ['name' => 'main'])
 
 
 @yield('content')
@@ -730,27 +782,36 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 footer-left footer-left">
-                    <img class="logo" src="https://ekokan.com.pl/wp-content/uploads/2018/10/logo1.svg" alt="logo">
-                    <p class="text-s">Jesteśmy liderami branży sieci i instalacji. Jesteśmy w całej Polsce. Nigdy
-                        nie rezygnujemy z nowych wyzwań. Skontaktuj się teraz!</p>
+                    <img class="logo" src="{{asset('images/logo1.svg')}}" alt="logo">
+                    <p class="text-s">{{getConstField('comapny_description')}}</p>
                     <hr class="space xs">
                     <div class="btn-group navbar-social">
-                        <div class="btn-group social-group social-colors"><a target="_blank" rel="nofollow"
-                                                                             href="#"><i class="fa fa-facebook"></i></a><a target="_blank" rel="nofollow"
-                                                                                                                           href="#"><i class="fa fa-twitter"></i></a><a target="_blank" rel="nofollow"
-                                                                                                                                                                        href="#"><i class="fa fa-youtube"></i></a><a target="_blank" rel="nofollow"
-                                                                                                                                                                                                                     href="#"><i class="fa fa-linkedin"></i></a> </div>
+                        <div class="btn-group social-group social-colors">
+                            @if(!empty(getConstField('facebook')))
+                                <a target="_blank" rel="nofollow" href="{{ getConstField('facebook') }}">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            @endif
+                            @if(!empty(getConstField('twitter')))
+                                <a target="_blank" rel="nofollow" href="{{ getConstField('twitter') }}">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            @endif
+                            @if(!empty(getConstField('youtube')))
+                                <a target="_blank" rel="nofollow" href="{{ getConstField('youtube') }}">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            @endif
+                            @if(!empty(getConstField('linkedin')))
+                                <a target="_blank" rel="nofollow" href="{{ getConstField('linkedin') }}">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            @endif
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 footer-center">
-                    <form class="navbar-form search-input">
-                        <div class="form-group">
-                            <input type="text" id="searchfooter" class="form-control" placeholder="Search">
-                        </div>
-                        <input class="btn btn-sm"
-                               onclick="document.location = 'https://ekokan.com.pl' + '?s=' + jQuery('#searchfooter').val()"
-                               value="GO">
-                    </form>
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Przydatne linki</h4>
@@ -788,7 +849,7 @@
             </div>
         </div>
         <div class="row copy-row">
-            <div class="col-md-12 copy-text">© 2023 PUE Polski Gaz </div>
+            <div class="col-md-12 copy-text">© <?php echo date("Y") ?> PUE Polski Gaz </div>
         </div>
     </div>
 </footer>
@@ -1107,8 +1168,6 @@
 
 <img src="https://pixel.wp.com/g.gif?v=ext&amp;blog=203138821&amp;post=158&amp;tz=0&amp;srv=ekokan.com.pl&amp;j=1%3A12.6.3&amp;host=ekokan.com.pl&amp;ref=&amp;fcp=0&amp;rand=0.1427578223299968"
      alt="" width="6" height="5" id="wpstats">
-<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.jquery.min.js" integrity="sha512-iJCzEG+s9LeaFYGzCbDInUbnF03KbE1QV1LM983AW5EHLxrWQTQaZvQfAQgLFgfgoyozb1fhzhe/0jjyZPYbmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="{{asset('js/frontend.js')}}"></script>
 <script src="{{asset('js/main.min.js')}}"></script>

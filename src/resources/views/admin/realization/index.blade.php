@@ -29,7 +29,7 @@
                             <td>#</td>
                             <td></td>
                             <td>{{__('admin.realization.title')}}</td>
-                            <td>Kategoria</td>
+{{--                            <td>Kategoria</td>--}}
                             <td>{{__('admin.active')}}</td>
                             <td></td>
                         </tr>
@@ -53,7 +53,7 @@
                                         </small>
                                     @endif
                                 </td>
-                                <td>{!! $realization->category->title ?? '' !!}</td>
+{{--                                <td>{!! $realization->category->title ?? '' !!}</td>--}}
                                 <td>
                                     <input type="checkbox" class="status-switch" data-source_table="realization" data-source_id="{{$realization->id}}" {{$realization->active ? 'checked' : ''}}>
                                 </td>

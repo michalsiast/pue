@@ -3,18 +3,18 @@
 ------------------------------------------------------------------
 Table of contents
 
-1. Global styles  [Row 126] 
-2. Headers \ Menus [Row 427] 
-3. Side menus [Row 1611] 
-4. Footer [Row 2189] 
-5. Titles [Row 2388] 
-6. Templates [Row 2790] 
-7. Components [Row 2991] 
-8. Thypography [Row 4226] 
-9. Sections [Row 4556] 
-10. Skin white [Row 4806] 
-11. Mobile / responsive [Row 4900] 
-12. IE < 10 [Row 5803] 
+1. Global styles  [Row 126]
+2. Headers \ Menus [Row 427]
+3. Side menus [Row 1611]
+4. Footer [Row 2189]
+5. Titles [Row 2388]
+6. Templates [Row 2790]
+7. Components [Row 2991]
+8. Thypography [Row 4226]
+9. Sections [Row 4556]
+10. Skin white [Row 4806]
+11. Mobile / responsive [Row 4900]
+12. IE < 10 [Row 5803]
 -------------------------------------------------------------------
 
 ==============================
@@ -218,7 +218,7 @@ body .row-23 {
     height: 1250px !important;
 }
 
-/* 
+/*
 ==============================
 TYPOGRAPHY
 ==============================
@@ -375,9 +375,9 @@ p + .block-quote, .block-quote + p {
     text-align: center;
 }
 
-/* 
+/*
 ------------------------------
-SEPARATORS  
+SEPARATORS
 ------------------------------
 */
 
@@ -591,7 +591,7 @@ h1, .h1, h2, .h2, h3, .h3 {
     line-height: 110px;
 }
 
-/* 
+/*
 ==============================
 LAYOUT
 ==============================
@@ -844,9 +844,9 @@ BOXED AND BOXED INVERSE
 }
 
 
-/* 
+/*
 ==============================
-HEADER - MENU 
+HEADER - MENU
 ==============================
 
 ------------------------------
@@ -1704,7 +1704,7 @@ BIG LOGO
     max-height: 30px;
 }
 
-/* 
+/*
 ------------------------------
 MIDDLE BOX
 ------------------------------
@@ -1740,7 +1740,7 @@ header.scroll-css .middle-box-menu {
         margin: 0;
     }
 
-/* 
+/*
 ------------------------------
 SUBLINE
 ------------------------------
@@ -2002,7 +2002,7 @@ header.menu-top-logo:not(.scroll-css) .navbar-main.navbar-middle ul.navbar-nav {
     text-align: left;
 }
 
-/* 
+/*
 ------------------------------
 ICON MENU
 ------------------------------
@@ -2105,9 +2105,9 @@ header.scroll-css .icon-menu-top .navbar-brand {
 header.scroll-css .icon-top .icon-menu .navbar-brand {
     height: 75px;
 }
-/* 
+/*
 ------------------------------
-SIDE MENU 
+SIDE MENU
 ------------------------------
 */
 .side-menu .panel .col {
@@ -2537,9 +2537,9 @@ navbar-fixed-top .side-menu-fixed .brand {
     display: block;
 }
 
-/* 
+/*
 ==============================
-FOOTER 
+FOOTER
 ==============================
 */
 
@@ -2708,7 +2708,7 @@ footer.footer-center .content {
     float: none;
 }
 
-/* 
+/*
 ==============================
 BACKGROUND PATTERNS
 ==============================
@@ -2781,13 +2781,13 @@ BACKGROUND PATTERNS
     position: relative;
     z-index: 9;
 }
-/* 
+/*
 ==============================
 TEMPLATES
 ==============================
 
 ------------------------------
-BACKGROUND IMAGE 
+BACKGROUND IMAGE
 ------------------------------
 */
 .background-page {
@@ -3322,7 +3322,7 @@ COLLAPSE
     background: none;
 }
 
-/* 
+/*
 ------------------------------
 FIXED AREA
 ------------------------------
@@ -3341,7 +3341,7 @@ FIXED AREA
     margin: 0 15px;
 }
 
-/* 
+/*
 ------------------------------
 SCROLL BOX
 ------------------------------
@@ -3402,7 +3402,7 @@ SCROLL BOX
     background: linear-gradient(to top, rgb(245, 245, 245) 0%,rgba(0,0,0,0) 100%);
 }
 
-/* 
+/*
 ------------------------------
 GRID & MASONRY LIST
 ------------------------------
@@ -4487,10 +4487,10 @@ ICON BOX
 }
 
 
-/* 
-============================== 
-BUTTONS 
-============================== 
+/*
+==============================
+BUTTONS
+==============================
 */
 .btn {
     background-color: #f5f5f5;
@@ -4883,10 +4883,14 @@ span.caption-box {
 }
 
 .circle, .circle img {
-    border-radius: 50%;
     position: relative;
     backface-visibility: hidden;
     transform: scale(1);
+}
+
+.circle img{
+    width: 35px!important;
+    margin: 0px!important;
 }
 
 .caption.caption-out {
@@ -4920,10 +4924,10 @@ span.caption-box {
     height: 500px;
 }
 
-/* 
-============================== 
-TITLES 
-============================== 
+/*
+==============================
+TITLES
+==============================
 
 ------------------------------
 GLOBAL
@@ -4934,7 +4938,7 @@ GLOBAL
     background-size: 10px;
 }
 
-/* 
+/*
 ------------------------------
 TITLE BASE
 ------------------------------
@@ -5027,7 +5031,7 @@ header .title-base h1, header div.title-base p, .header-base .breadcrumb.b a, .h
     .title-base .scroll-top:hover, .title-modern .scroll-top:hover {
         background-color: #585858;
     }
-/* 
+/*
 ------------------------------
 TITLE MODERN
 ------------------------------
@@ -5069,7 +5073,7 @@ TITLE MODERN
     max-width: 700px;
     margin: 0 auto 13px auto !important;
 }
-/* 
+/*
 ------------------------------
 TITLE ICON
 ------------------------------
@@ -5626,7 +5630,7 @@ WORDPRESS
 .hc_title_tag_cnt > *, .hc_subtitle_cnt h2 {
     margin: 0 0 10px 0;
 }
- 
+
 .widget .tagbox {
     padding: 15px 0;
 }
@@ -5815,7 +5819,7 @@ img.alignright {
     display: none;
 }
 
- 
+
 
 #wp-calendar {
     table-layout: fixed;
@@ -5874,7 +5878,7 @@ img.alignright {
         list-style: none;
     }
 
- 
+
 
 .list-blog > ul > li.cat-item {
     border: none;
@@ -7079,8 +7083,8 @@ VARIOUS
         float: left;
     }
 
- 
- 
+
+
 
     table.bootgrid-table {
         border: 1px solid #ddd;

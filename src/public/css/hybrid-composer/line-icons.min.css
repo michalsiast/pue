@@ -191,10 +191,6 @@ Social icons and compatibility styles
     content: "\63";
 }
 
-.fa-twitter:before {
-    content: "\64";
-}
-
 .fa-twitch:before {
     content: "\65";
 }
@@ -205,10 +201,6 @@ Social icons and compatibility styles
 
 .fa-youtube-square:before {
     content: "\67";
-}
-
-.fa-youtube:before {
-    content: "\69";
 }
 
 .fa-google-plus:before, .fa-google:before {
