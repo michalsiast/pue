@@ -94,6 +94,14 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
+                            {!! $form->renderFieldGroup('heading_promise') !!}
+                            {!! $form->renderFieldGroup('description_promise') !!}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
                     {!! $form->renderFieldGroup('contact_form_rule') !!}
                         </div>
                     </div>

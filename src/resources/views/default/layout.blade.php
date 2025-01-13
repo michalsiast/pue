@@ -837,13 +837,21 @@
                 </div>
                 <div class="col-md-3 footer-right ">
                     <div class="footer-box">
-                        <h4>Obietnica naszej marki</h4>
-                        <ul class="fa-ul">
-                            <li><i class="fa-li im-information"></i> Niezawodność </li>
-                            <li><i class="fa-li im-information"></i> Szacunek</li>
-                            <li><i class="fa-li im-information"></i> Zaufanie</li>
-                            <li><i class="fa-li im-information"></i> Gwarancja</li>
-                        </ul>
+                        <h4>{{ getConstField('heading_promise') }}</h4>
+                        @if(!empty(getConstField('description_promise')))
+                            <ul class="fa-ul">
+                                @php
+                                    $promiseList = getConstField('description_promise');
+                                    $dom = new \DOMDocument();
+                                    $dom->loadHTML('<?xml encoding="utf-8" ?>' . $promiseList, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+                                    $listItems = $dom->getElementsByTagName('li');
+                                @endphp
+
+                                @foreach($listItems as $listItem)
+                                    <li><i class="fa-li fa-solid fa-circle-info"></i> {!! $listItem->nodeValue !!}</li>
+                                @endforeach
+                            </ul>
+                        @endif
                     </div><span class="space"></span><span class="space"></span>
                 </div>
             </div>

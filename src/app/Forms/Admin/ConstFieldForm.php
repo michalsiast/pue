@@ -143,7 +143,20 @@ class ConstFieldForm extends Form
             'label' => 'Linkedin',
             'rules' => [],
         ],
-
+        'heading_promise' => [
+            'name' => 'heading_promise',
+            'type' => 'text',
+            'label' => 'Nagłówek - Obietnica',
+            'rules' => [],
+        ],
+        'description_promise' => [
+            'name' => 'description_promise',
+            'type' => 'textarea',
+            'label' => 'Opis - Obietnice',
+            'rules' => [],
+            'row' => 5,
+            'class' => 'ckeditorStandard',
+        ],
         'contact_form_rule' => [
             'name' => 'contact_form_rule',
             'type' => 'textarea',
