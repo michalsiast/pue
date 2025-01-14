@@ -92,9 +92,6 @@
                         <div class="col-md-12 hc_space_cnt">
                             <hr class="space" style=" height: 10px" />
                         </div>
-                        <div class="col-md-12 hc_text_block_cnt">
-                            <div id="5ZtkF" class='   ' style=''>{!! getConstField('contact_form_rule') !!}</div>
-                        </div>
                     </div>
                 </div>
             </div>

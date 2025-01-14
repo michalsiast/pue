@@ -3,56 +3,56 @@
         <div class="col-md-6">
             <hr class="space xs" />
             <p>Imię</p>
-            <input id="Imię" name="Imię" type="text" class="form-control form-value" required>
+            <input id="name" name="name" type="text" class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <hr class="space xs" />
-            <p>Nazwisko</p><input id="Nazwisko" name="Nazwisko" type="text"
+            <p>Nazwisko</p><input id="surname" name="surname" type="text"
                                   class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-3">
             <hr class="space xs" />
-            <p>Miasto/Wieś</p><input id="Miasto/Wieś" name="Miasto/Wieś" type="text"
+            <p>Miasto/Wieś</p><input id="city" name="city" type="text"
                                      class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-3">
             <hr class="space xs" />
-            <p>Województwo</p><input id="Województwo" name="Województwo" type="text"
+            <p>Województwo</p><input id="voivodeship" name="voivodeship" type="text"
                                      class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-4">
             <hr class="space xs" />
-            <p>Addres</p><input id="Addres" name="Addres" type="text"
+            <p>Addres</p><input id="address" name="address" type="text"
                                 class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-2">
             <hr class="space xs" />
-            <p>Kod pocztowy</p><input id="Kod-pocztowy" name="Kod pocztowy" type="text"
+            <p>Kod pocztowy</p><input id="postcode" name="postcode" type="text"
                                       class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <hr class="space xs" />
-            <p>Telefon</p><input id="Telefon" name="Telefon" type="number"
+            <p>Telefon</p><input id="phone" name="phone" type="number"
                                  class="form-control form-value">
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <hr class="space xs" />
-            <p>Email</p><input id="Email" name="Email" type="email"
+            <p>Email</p><input id="email" name="email" type="email"
                                class="form-control form-value" required>
             <div class="invalid-feedback"></div>
         </div>
         <div class="col-md-12">
             <hr class="space xs" />
             <p>Jakim stanowiskiem jesteś zainteresowany?</p><textarea
-                id="Jakim-stanowiskiem-jesteś zainteresowany?"
-                name="Jakim stanowiskiem jesteś zainteresowany?" class="form-control form-value"
+                id="message"
+                name="message" class="form-control form-value"
                 required></textarea>
             <div class="invalid-feedback"></div>
         </div>
