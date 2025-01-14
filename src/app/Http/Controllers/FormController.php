@@ -37,7 +37,7 @@ class FormController extends Controller
             'voivodeship' => ['nullable'],
             'address' => ['nullable'],
             'postcode' => ['nullable'],
-            'rule' => ['nullable'],
+            'rule' => ['required'],
             'g-recaptcha-response' => ['required'],
         ]);
 
