@@ -39,9 +39,7 @@
                         <div class="col-md-12 hc_space_cnt">
                             <hr class="space     " style=" height: 10px" />
                         </div>
-                        <div class="col-md-12 hc_text_block_cnt">
-                            <div id="XjayW" class='' style=''>{!! getConstField('contact_form_rule') !!}</div>
-                        </div>
+
                     </div>
                 </div>
                 <div id="MrTpI" class="hc_column_cnt col-md-6  boxed-inverse col-sm-12  " style="">

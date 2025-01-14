@@ -57,6 +57,17 @@
             <div class="invalid-feedback"></div>
         </div>
     </div>
+    <div class="col-md-12 hc_text_block_cnt">
+        <div id="XjayW" style="display: flex;column-gap: 15px" class='' style=''><input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input">
+            <label for="rule" style="font-weight: 400">{!! getConstField('contact_form_rule') !!}</label>
+            <div class="invalid-feedback"></div></div>
+    </div>
+    <div class="col-md-12 hc_text_block_cnt">
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="{{$siteKey}}"></div>
+            <div class="invalid-feedback"></div>
+        </div>
+    </div>
     <hr class="space s" /><button class="btn btn-sm mb-3" type="submit">Wyślij formularz</button>
     <div id="alert" class="alert"></div>
 </form>
