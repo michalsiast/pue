@@ -32,7 +32,12 @@ class FormController extends Controller
             'name' => ['required'],
             'email' => ['sometimes', 'nullable', 'required_without:phone', 'email'],
             'phone' => ['required_without:email'],
-            'rule' => ['required'],
+            'surname' => ['nullable'],
+            'city' => ['nullable'],
+            'voivodeship' => ['nullable'],
+            'address' => ['nullable'],
+            'postcode' => ['nullable'],
+            'rule' => ['nullable'],
             'g-recaptcha-response' => ['required'],
         ]);
 

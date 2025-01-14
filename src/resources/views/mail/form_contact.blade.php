@@ -17,7 +17,11 @@
                         <table width="100%"  border="1" cellpadding="10" cellspacing="0">
                             <tr>
                                 <td width="25%">{{__('admin.email.contact.name')}}:</td>
-                                <td width="75%">{{$form->name}}</td>
+                                <td width="75%">{{$form->name}}
+                                    @if(!empty($form->surname))
+                                        {{$form->surname}}
+                                    @endif
+                                </td>
                             </tr>
 
                             <tr>
@@ -30,6 +34,30 @@
                                 <td>{{$form->phone}}</td>
                             </tr>
 
+                            @if(!empty($form->address))
+                                <tr>
+                                    <td>Adres:</td>
+                                    <td>{{$form->address}}</td>
+                                </tr>
+                            @endif
+                            @if(!empty($form->postcode))
+                                <tr>
+                                    <td>Kod pocztowy:</td>
+                                    <td>{{$form->postcode}}</td>
+                                </tr>
+                            @endif
+                            @if(!empty($form->city))
+                                <tr>
+                                    <td>Miasto:</td>
+                                    <td>{{$form->city}}</td>
+                                </tr>
+                            @endif
+                            @if(!empty($form->voivodeship))
+                                <tr>
+                                    <td>Województwo:</td>
+                                    <td>{{$form->voivodeship}}</td>
+                                </tr>
+                            @endif
                             <tr>
                                 <td>{{__('admin.email.contact.message')}}:</td>
                                 <td>{{$form->message}}</td>

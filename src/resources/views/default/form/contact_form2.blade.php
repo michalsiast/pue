@@ -58,7 +58,7 @@
         </div>
     </div>
     <div class="col-md-12 hc_text_block_cnt">
-        <div id="XjayW" style="display: flex;column-gap: 15px" class='' style=''><input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input">
+        <div id="XjayW" style="display: flex;column-gap: 15px" class='' style=''><input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input" required>
             <label for="rule" style="font-weight: 400">{!! getConstField('contact_form_rule') !!}</label>
             <div class="invalid-feedback"></div></div>
     </div>
