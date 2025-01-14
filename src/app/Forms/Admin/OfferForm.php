@@ -37,9 +37,8 @@ class OfferForm extends Form
         ],
         'lead' => [
             'name' => 'lead',
-            'type' => 'textarea',
+            'type' => 'text',
             'label' => 'admin.offer.lead',
-            'class' => 'ckeditorStandard',
             'rules' => [],
             'options' => [],
         ],

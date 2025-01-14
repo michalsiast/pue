@@ -434,9 +434,7 @@
     <link rel="stylesheet" id="hc-scripts/flexslider/flexslider.css-css"
           href="{{asset('css/hybrid-composer/flexslider.css')}}"
           type="text/css" media="all">
-    <link rel="stylesheet" id="hc-scripts/magnific-popup.css-css"
-          href="{{asset('css/hybrid-composer/magnific-popup.css')}}"
-          type="text/css" media="all">
+
     <link rel="stylesheet" id="hc-css/content-box.css-css"
           href="{{asset('css/hybrid-composer/content-box.css')}}" type="text/css"
           media="all">
@@ -719,16 +717,6 @@
 </head>
 
 <body class="home page-template-default page page-id-158 boxed-layout device-l" style="background-color: #F4932A;">
-<div class="parallax-mirror"
-     style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 588px; width: 1200px;">
-    <img class="parallax-slider" src="https://ekokan.com.pl/wp-content/uploads/2021/11/hd-8a.jpg"
-         style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -114px; height: 910px; width: 1429px; max-width: none;">
-</div>
-<div class="parallax-mirror"
-     style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 738px; width: 1200px;">
-    <img class="parallax-slider" src="https://ekokan.com.pl/wp-content/uploads/2021/11/hd-5-1920x1080.jpg"
-         style="transform: translate3d(0px, 0px, 0px); position: absolute; left: -235px; height: 940px; width: 1671px; max-width: none;">
-</div>
 <div id="preloader" style="display: none;"></div>
 <div class=" content-parallax">
     <header class="scroll-change fixed-top menu-top-logo" data-menu-anima="fade-in" data-menu-height="139"
@@ -761,7 +749,7 @@
                         @include('default.nav_item.main', ['name' => 'main'])
 
                         <div class="nav navbar-nav navbar-right">
-                            <div class="custom-area"><a href="https://ekokan.com.pl/contacts-two/"
+                            <div class="custom-area"><a href="{{route('contact.show')}}"
                                                         class="btn btn-sm hidden-sm">Kontakt</a>
                                 <div class="custom-menu"><span>{{getConstField('company_nip')}}</span><span><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">tel. {{getConstField('phone')}}</a></span></div>
                             </div>
@@ -815,23 +803,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Przydatne linki</h4>
-                            <div class="footer-menu">
-                                <a href="https://ekokan.com.pl/">Strona Główna</a>
-                                <a href="https://ekokan.com.pl/">O Firmie</a>
-                                <a href="https://ekokan.com.pl/">Usługi</a>
-                                <a href="https://ekokan.com.pl/">Aktualności</a>
-                                <a href="https://ekokan.com.pl/">Realizacje</a>
-                                <a href="https://ekokan.com.pl/">Kontakt</a>
-                            </div>
+                                @include('default.nav_item.footer', ['name' => 'footer'])
+
                         </div>
 
                         <div class="col-md-6">
                             <h4>Nasza Firma</h4>
-                            <div class="footer-menu"><a
-                                    href="https://ekokan.com.pl/projects/polityka-prywatnosci/">Polityka
-                                    prywatności</a>
-                                <a href="https://ekokan.com.pl/projects/polityka-prywatnosci/">Polityka cookies</a>
-                            </div>
+                            @include('default.nav_item.footer', ['name' => 'footer2'])
                         </div>
                     </div>
                 </div>
@@ -868,7 +846,7 @@
             <div class="cli-bar-container cli-style-v2">
                 <div class="cli-bar-message">Ta strona używa ciasteczek (cookies) i przetwarza dane osobowe dzięki
                     którym nasz serwis może działać lepiej.</div>
-                <div class="cli-bar-btn_container"><a href="https://ekokan.com.pl/projects/polityka-prywatnosci/"
+                <div class="cli-bar-btn_container"><a href="/polityka-prywatnosci/"
                                                       id="CONSTANT_OPEN_URL" class="cli-plugin-main-link" style="color: rgb(68, 68, 68);">Polityka
                         prywatności</a><a id="wt-cli-accept-all-btn" role="button" data-cli_action="accept_all"
                                           class="wt-cli-element medium cli-plugin-button wt-cli-accept-all-btn cookie_action_close_header cli_action_button"
@@ -1156,9 +1134,7 @@
 <script type="text/javascript"
         src="{{asset('js/hybrid-composer/jquery.flexslider-min.js')}}"
         id="flexslider/jquery.flexslider-min.js-js"></script>
-<script type="text/javascript"
-        src="{{asset('js/hybrid-composer/jquery.magnific-popup.min.js')}}"
-        id="jquery.magnific-popup.min.js-js"></script>
+
 <script type="text/javascript"
         src="{{asset('js/hybrid-composer/jquery.progress-counter.js')}}"
         id="jquery.progress-counter.js-js"></script>

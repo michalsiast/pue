@@ -73,7 +73,33 @@ abstract class PageType extends Enum
         'name' => 'about-us.show',
         'module' => false,
         'fields' => [
-            'text1' => ['text', '']
+            'text1' => ['text', 'Opis strony'],
+            'about_us_header' => ['head', 'Nagłówek - O Firmie'],
+            'about_us_description' => ['text', 'Opis - O Firmie'],
+            'certificate_1_header' => ['head', 'Nagłówek - Certyfikat 1'],
+            'certificate_1_description' => ['text', 'Opis - Certyfikat 1'],
+            'certificate_2_header' => ['head', 'Nagłówek - Certyfikat 2'],
+            'certificate_2_description' => ['text', 'Opis - Certyfikat 2'],
+
+            'counter_1_header' => ['head', 'Nagłówek - Licznik 1'],
+            'counter_1_value' => ['head', 'Liczba - Licznik 1'],
+            'counter_1_unit' => ['head', 'Jednostka - Licznik 1'],
+            'counter_1_description' => ['head', 'Opis - Licznik 1'],
+
+            'counter_2_header' => ['head', 'Nagłówek - Licznik 2'],
+            'counter_2_value' => ['head', 'Liczba - Licznik 2'],
+            'counter_2_unit' => ['head', 'Jednostka - Licznik 2'],
+            'counter_2_description' => ['head', 'Opis - Licznik 2'],
+
+            'counter_3_header' => ['head', 'Nagłówek - Licznik 3'],
+            'counter_3_value' => ['head', 'Liczba - Licznik 3'],
+            'counter_3_unit' => ['head', 'Jednostka - Licznik 3'],
+            'counter_3_description' => ['head', 'Opis - Licznik 3'],
+
+            'counter_4_header' => ['head', 'Nagłówek - Licznik 4'],
+            'counter_4_value' => ['head', 'Liczba - Licznik 4'],
+            'counter_4_unit' => ['head', 'Jednostka - Licznik 4'],
+            'counter_4_description' => ['head', 'Opis - Licznik 4'],
         ]
     ];
     const CONTACT_SHOW = [
@@ -109,7 +135,9 @@ abstract class PageType extends Enum
         'name' => 'offer_category.index',
         'module' => true,
         'fields' => [
-            'text1' => ['text', '']
+            'text1' => ['text', 'Opis strony'],
+            'heading' => ['head', 'Nagłówek'],
+            'contact_heading' => ['head', 'Nagłówek - Kontakt'],
         ]
     ];
     const REALIZATION_INDEX = [

@@ -26,12 +26,18 @@ return [
                         'route_name' => 'admin.nav_item.index',
                         'params' => 'main'
                     ],
-//                    'nav_item_footer' => [
-//                        'label' => 'admin.navs.footer',
-//                        'icon' => 'arrow-up-left',
-//                        'route_name' => 'admin.nav_item.index',
-//                        'params' => 'footer'
-//                    ],
+                    'nav_item_footer_1' => [
+                        'label' => 'Przydatne linki',
+                        'icon' => 'arrow-up-left',
+                        'route_name' => 'admin.nav_item.index',
+                        'params' => 'footer'
+                    ],
+                    'nav_item_footer_2' => [
+                        'label' => 'Nasza Firma',
+                        'icon' => 'arrow-up-left',
+                        'route_name' => 'admin.nav_item.index',
+                        'params' => 'footer2'
+                    ],
                 ]
             ],
             'page' => [
@@ -44,39 +50,32 @@ return [
                 'icon' => 'sliders',
                 'route_name' => 'admin.rotator.index',
             ],
-            'article' => [
-                'label' => 'admin.article.plural',
-                'icon' => 'book',
-                'route_name' => '',
-                'items' => [
-                    'article' => [
-                        'label' => 'admin.article.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.article.index',
-                    ],
-                    'article_category' => [
-                        'label' => 'admin.article_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.article_category.index',
-                    ],
-                ]
-            ],
+//            'article' => [
+//                'label' => 'admin.article.plural',
+//                'icon' => 'book',
+//                'route_name' => '',
+//                'items' => [
+//                    'article' => [
+//                        'label' => 'admin.article.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.article.index',
+//                    ],
+//                    'article_category' => [
+//                        'label' => 'admin.article_category.plural',
+//                        'icon' => 'arrow-up-left',
+//                        'route_name' => 'admin.article_category.index',
+//                    ],
+//                ]
+//            ],
             'offer' => [
                 'label' => 'admin.offer.plural',
                 'icon' => 'database',
-                'route_name' => '',
-                'items' => [
-                    'offer' => [
-                        'label' => 'admin.offer.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.offer.index',
-                    ],
-                    'offer_category' => [
-                        'label' => 'admin.offer_category.plural',
-                        'icon' => 'arrow-up-left',
-                        'route_name' => 'admin.offer_category.index',
-                    ],
-                ]
+                'route_name' => 'admin.offer.index',
+            ],
+            'offer_category' => [
+                'label' => 'admin.offer_category.plural',
+                'icon' => 'arrow-up-left',
+                'route_name' => 'admin.offer_category.index',
             ],
             'realization' => [
                 'label' => 'admin.realization.plural',

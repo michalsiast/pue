@@ -22,35 +22,15 @@
                     <div class="row">
                         <div class="col-md-12 hc_grid_list_cnt">
                             <div class="grid-list     gallery" style="">
-                                <div class="grid-box row " data-lightbox-anima='fade-in'>
-                                    <div class="grid-item col-md-6  ">
-                                        <a class="img-box i-center  "
-                                           href="https://ekokan.com.pl/wp-content/uploads/2021/11/rop1.jpg"
-                                           data-anima='fade-in' data-trigger='hover' data-anima-out='hide'><i
-                                                class='anima im-photo-2'></i><img decoding="async" alt=""
-                                                                                  src="https://ekokan.com.pl/wp-content/uploads/2021/11/rop1.jpg" /></a>
-                                    </div>
-                                    <div class="grid-item col-md-6  ">
-                                        <a class="img-box i-center  "
-                                           href="https://ekokan.com.pl/wp-content/uploads/2021/11/rop2.jpg"
-                                           data-anima='fade-in' data-trigger='hover' data-anima-out='hide'><i
-                                                class='anima im-photo-2'></i><img decoding="async" alt=""
-                                                                                  src="https://ekokan.com.pl/wp-content/uploads/2021/11/rop2.jpg" /></a>
-                                    </div>
-                                    <div class="grid-item col-md-6  ">
-                                        <a class="img-box i-center  "
-                                           href="https://ekokan.com.pl/wp-content/uploads/2021/11/rop3.jpg"
-                                           data-anima='fade-in' data-trigger='hover' data-anima-out='hide'><i
-                                                class='anima im-photo-2'></i><img decoding="async" alt=""
-                                                                                  src="https://ekokan.com.pl/wp-content/uploads/2021/11/rop3.jpg" /></a>
-                                    </div>
-                                    <div class="grid-item col-md-6  ">
-                                        <a class="img-box i-center  "
-                                           href="https://ekokan.com.pl/wp-content/uploads/2021/11/rop4.jpg"
-                                           data-anima='fade-in' data-trigger='hover' data-anima-out='hide'><i
-                                                class='anima im-photo-2'></i><img decoding="async" alt=""
-                                                                                  src="https://ekokan.com.pl/wp-content/uploads/2021/11/rop4.jpg" /></a>
-                                    </div>
+                                <div class="grid-box row" data-lightbox-anima='fade-in'>
+                                    @foreach($item->gallery->items as $gallery)
+                                        @if($gallery->type === 'gallery')
+                                            <div class="grid-item col-md-6  ">
+                                                <a class="img-box i-center  " href="{{renderImage($gallery->url, 1000, 800, 'resize')}}"
+                                                   data-anima='fade-in' data-trigger='hover' data-anima-out='hide'><i class="anima fa-regular fa-image"></i><img decoding="async" alt="" src="{{renderImage($gallery->url, 355, 240, 'fit')}}" /></a>
+                                            </div>
+                                        @endif
+                                    @endforeach
                                 </div>
                             </div>
                         </div>

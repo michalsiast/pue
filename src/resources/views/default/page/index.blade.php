@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-md-12 hc_button_cnt">
                         <div id="oPsmA" class="button-cnt    " style="display: block; text-align:left">
-                            <a class="btn btn-sm btn-icon  " href="https://ekokan.com.pl/about/">
+                            <a class="btn btn-sm btn-icon  " href="{{route('about-us.show')}}">
                                 <i class="fa-solid fa-arrow-pointer"></i> Więcej Informacji </a>
                         </div>
                     </div>
@@ -329,7 +329,7 @@
                     </div>
                     <div class="col-md-12 hc_button_cnt">
                         <div id="LePaH" class="button-cnt    " style="display: block; text-align:left">
-                            <a class="btn btn-sm btn-icon  " href="https://ekokan.com.pl/about/">
+                            <a class="btn btn-sm btn-icon  " href="{{route('about-us.show')}}">
                                 <i class="fas fa-hard-hat"></i>Dowiedz się więcej </a>
                         </div>
                     </div>
@@ -359,7 +359,7 @@
 
                         <div class="col-md-12 hc_button_cnt">
                             <div id="YpNX5" class="button-cnt    " style="display: block; text-align:left">
-                                <a class="btn-text btn-icon  " href="https://ekokan.com.pl/">
+                                <a class="btn-text btn-icon  " href="/">
                                     <i class="fa-solid fa-glasses"></i>Nasi Partnerzy </a>
                             </div>
                         </div>
@@ -433,7 +433,7 @@
                             <p class="big-text "><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">Tel: {{getConstField('phone')}}</a><br>
 
                                 <br>
-                            </p> <a class="btn-text " href="https://ekokan.com.pl/contacts-two/">Kontakt</a>
+                            </p> <a class="btn-text " href="{{route('contact.show')}}">Kontakt</a>
                         </div>
                     </div>
                 </div>
@@ -452,7 +452,7 @@
                                 <br>
 
                                 <br>
-                            </p> <a class="btn-text " href="https://ekokan.com.pl/contacts-two/">Kontakt</a>
+                            </p> <a class="btn-text " href="{{route('contact.show')}}">Kontakt</a>
                         </div>
                     </div>
                 </div>
@@ -468,7 +468,7 @@
                             @endif
                                 @if(!empty($fields->work_hours_description))
                             <p class="big-text ">{{$fields->work_hours_description}}</p>@endif <a
-                                class="btn-text " href="https://ekokan.com.pl/contacts-two/">Kontakt</a>
+                                class="btn-text " href="{{route('contact.show')}}">Kontakt</a>
                         </div>
                     </div>
                 </div>

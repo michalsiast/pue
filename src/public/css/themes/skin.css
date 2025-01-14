@@ -589,9 +589,9 @@ body .pulse-line i:after {
 }
 
 .projects-slider .adv-img-double-content .adv-img-half-content {
-    bottom: -300px;
+    bottom: -640px;
     position: absolute;
-    height: 270px !important;
+    left: 0px;
     overflow: visible;
     background: none;
     border-radius: 0;
@@ -1468,7 +1468,7 @@ header.scroll-css .navbar-main:not(.navbar-middle) .navbar-brand {
 }
 
 .navbar-main .dropdown-submenu > a:after, .side-menu .fa.arrow:before, .dropdown .caret:before, .comment-reply-link:after, .pagination > li > a i:before,
-.porfolio-bar .icon-box i:before, .fullpage-arrow i:before, .fullpage-varrow i:before, .mfp-arrow:before, li > a > .plus-times:before, .scroll-top-mobile:before {
+.porfolio-bar .icon-box i:before, .fullpage-arrow i:before, .fullpage-varrow i:before,  li > a > .plus-times:before, .scroll-top-mobile:before {
     border-top-width: 1px;
     border-right-width: 1px;
 }

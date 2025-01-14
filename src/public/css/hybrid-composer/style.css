@@ -3196,7 +3196,7 @@ PAGINATION
 }
 
 .dropdown-submenu > a:after, body .flex-direction-nav a:before, body .flex-direction-nav a.flex-next:before, .side-menu .fa.arrow:before, .dropdown .caret:before, .comment-reply-link:after,
-.pagination > li > a i:before, .porfolio-bar .icon-box i:before, .fullpage-arrow i:before, .fullpage-varrow i:before, .mfp-arrow:before, li > a > .plus-times:before, .scroll-top-mobile:before {
+.pagination > li > a i:before, .porfolio-bar .icon-box i:before, .fullpage-arrow i:before, .fullpage-varrow i:before,  li > a > .plus-times:before, .scroll-top-mobile:before {
     border-top-width: 2px;
     border-top-style: solid;
     border-right-width: 2px;
@@ -3212,7 +3212,7 @@ PAGINATION
     border-color: rgba(93, 93, 93, 0.5);
 }
 
-.white .fullpage-arrow i:before, .white .fullpage-varrow i:before, .white .mfp-arrow:before, .white li > a > .plus-times:before {
+.white .fullpage-arrow i:before, .white .fullpage-varrow i:before, .white li > a > .plus-times:before {
     border-color: rgba(255, 255, 255, 0.5);
 }
 

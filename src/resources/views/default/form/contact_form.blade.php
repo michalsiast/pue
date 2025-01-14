@@ -32,20 +32,6 @@
             </div>
         </div>
     </div>
-
-
-{{--    <div class="form-group">--}}
-{{--        <div class="form-check">--}}
-{{--            <input id="rule" type="checkbox" name="rule" placeholder="Rule" class="form-check-input">--}}
-{{--            <label for="rule" class="form-check-label">{!! getConstField('contact_form_rule') !!}</label>--}}
-{{--            <div class="invalid-feedback"></div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-{{--    <div class="form-group">--}}
-{{--        <div class="g-recaptcha" data-sitekey="{{$siteKey}}"></div>--}}
-{{--        <div class="invalid-feedback"></div>--}}
-{{--    </div>--}}
     <hr class="space s" /><button class="btn btn-outline-primary mb-3" type="submit">Wyślij wiadomość</button>
     <div id="alert" class="alert"></div>
 </form>

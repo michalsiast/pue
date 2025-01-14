@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-[class^="im-"], [class*=" im-"], .maso-order i, .fa-search, .mfp-preloader, .mfp-arrow:before, .fa-bookmark, .fa-pencil, .album-title .btn .fa, .bootgrid-table thead .fa, .side-menu .fa.arrow,
+[class^="im-"], [class*=" im-"], .maso-order i, .fa-search, .mfp-preloader, .fa-bookmark, .fa-pencil, .album-title .btn .fa, .bootgrid-table thead .fa, .side-menu .fa.arrow,
 .fa-share-alt, .pagination .fa-angle-left, .pagination .fa-angle-right, .porfolio-bar i, .fa-calendar, .fa-angle-up.scroll-top, .adv-img-button-content .caption i, .popup-close, .side-menu .plus-times,
 .dropdown-submenu > a:after, .navbar-toggle .fa-bars, header .fa-bars, .hamburger-button i:before, .fa-angle-double-left, .fa-angle-double-right, .fa-angle-down, .fa-comment-o, .scroll-top-mobile:before,
 .advs-box .btn .fa-long-arrow-right, .adv-img .btn .fa-long-arrow-right:before, .box-steps .step-item:after, .fa-shopping-cart:before, header .btn-search .fa-close:before {
@@ -59,11 +59,6 @@ Automatic conversion from Font Awesome to Icons Mind
     right: 18px;
 }
 
-@media (max-width: 992px) {
-    .mfp-arrow:before, .mfp-arrow:after, .mfp-arrow .mfp-b, .mfp-arrow .mfp-a {
-        margin: 12px 18px;
-    }
-}
 
 .album-title .btn .fa:before {
     content: "\ea29";

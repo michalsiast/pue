@@ -117,14 +117,14 @@ return [
 
 
     'offer.singular' => 'Oferta',
-    'offer.plural' => 'Oferty',
+    'offer.plural' => 'O firmie',
     'offer.title' => 'Tytuł',
-    'offer.lead' => 'Wprowadzenie',
+    'offer.lead' => 'Tytuł 2',
     'offer.text' => 'Tekst',
 
 
     'offer_category.singular' => 'Kategoria oferty',
-    'offer_category.plural' => 'Kategorie ofert',
+    'offer_category.plural' => 'Pracuj z nami',
     'offer_category.title' => 'Tytuł',
     'offer_category.lead' => 'Wprowadzenie',
     'offer_category.text' => 'Tekst',

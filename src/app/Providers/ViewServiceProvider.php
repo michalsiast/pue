@@ -25,8 +25,10 @@ class ViewServiceProvider extends ServiceProvider
 
 
         View::composer('default.nav_item.main', 'App\Http\Controllers\NavItemController@partial');
+        View::composer('default.nav_item.footer', 'App\Http\Controllers\NavItemController@partial');
         View::composer('default._helpers.lang_nav', 'App\Http\Controllers\IndexController@langNav');
         View::composer('default.form.contact_form', 'App\Http\Controllers\FormController@showContactForm');
+        View::composer('default.form.contact_form2', 'App\Http\Controllers\FormController@showContactForm');
 
 
         View::composer('default.article.category.home', 'App\Http\Controllers\ArticleCategoryController@home');
