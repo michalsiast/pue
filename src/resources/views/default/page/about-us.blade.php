@@ -58,16 +58,6 @@
                         <div class="col-md-12 hc_space_cnt">
                             <hr class="space m    " />
                         </div>
-                        <div class="col-md-12 hc_image_cnt"><img decoding="async" class="" style="" src="{{asset('images/sign-1.jpg')}}" alt="" /></div>
-                        <div class="col-md-12 hc_space_cnt">
-                            <hr class="space m" />
-                        </div>
-                        <div class="col-md-12 hc_title_tag_cnt">
-                            <h4 id="pxASD" class='' style=''>Jan Niemiec</h4>
-                        </div>
-                        <div class="col-md-12 hc_title_tag_cnt">
-                            <h4 id="vlrTh" class=' text-color text-s' style=''>Prezes Zarządu</h4>
-                        </div>
                     </div>
                 </div>
                 <div id="column_kOLLp" class="hc_column_cnt col-md-3  col-sm-6  " style="">
